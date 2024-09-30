@@ -1,0 +1,11 @@
+name: expressjs-helloworld
+on:
+  push:
+    branches: [main]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo "Hello ${{inputs.name}}"
